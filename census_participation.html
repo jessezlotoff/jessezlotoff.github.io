@@ -831,7 +831,7 @@ population.</p>
 National Center for Health Statistics (NCHS) (<a href="https://www.cdc.gov/nchs/data_access/urban_rural.htm#2006_Urban-Rural_Classification_Scheme_for_Counties" data-href="https://www.cdc.gov/nchs/data_access/urban_rural.htm#2006_Urban-Rural_Classification_Scheme_for_Counties">overview here</a>).</p>
 <h2 id="results" id="results" data-line="28" class="code-line">Results</h2>
 <p data-line="29" class="code-line">The model predicts participation at the county level within a few points.</p>
-<p data-line="31" class="code-line"><img src="data/imgs/holdout_model_comp.png" alt="Model performance" class="loading" id="image-hash-332576211"></p>
+<p data-line="31" class="code-line"><img src="images/holdout_model_comp.png" alt="Model performance" class="loading" id="image-hash-332576211"></p>
 <p data-line="33" class="code-line"><strong>Holdout RMSE</strong>: 8.2%<br>
 <strong>Holdout R<sup>2</strong>: 0.70<br>
 <strong>Baseline RMSE</strong>: 11.2%<br></p>
@@ -938,7 +938,7 @@ combined and then divided by the total population to make them comparable.</p>
 <h3 id="feature-tuning" id="feature-tuning" data-line="88" class="code-line">Feature Tuning</h3>
 <p data-line="89" class="code-line">I tested the best model with different sized subsets of features to improve <br>
 efficiency and help avoid overfitting.  50 features proved to be the best option.</p>
-<p data-line="92" class="code-line"><img src="data/imgs/gb_feature_tuning.png" alt="Feature Tuning" class="loading" id="image-hash--745832646"></p>
+<p data-line="92" class="code-line"><img src="images/gb_feature_tuning.png" alt="Feature Tuning" class="loading" id="image-hash--745832646"></p>
 <table>
 <thead>
 <tr>
@@ -977,10 +977,10 @@ has more trouble predicting very low target values.  There are fewer of these <b
 low values in the data as shown by the relatively small size of the dots.<br>
 Additional analysis shows values below 0.4 to be outliers in the train and test<br>
 sets, accounting for about 1% of values.</p>
-<p data-line="109" class="code-line"><img src="data/imgs/train_target_box_whisker.png" alt="" class="loading" id="image-hash--1412699440"></p>
+<p data-line="109" class="code-line"><img src="images/train_target_box_whisker.png" alt="" class="loading" id="image-hash--1412699440"></p>
 <p data-line="111" class="code-line">As a result, none of the models tested were able to predict these values well.<br>
 However, the models perform well overall.
-<img src="data/imgs/test_model_comp_outlier.png" alt="" class="loading" id="image-hash--68846301"></p>
+<img src="images/test_model_comp_outlier.png" alt="" class="loading" id="image-hash--68846301"></p>
 <h2 id="additional-information" id="additional-information" data-line="115" class="code-line">Additional Information</h2>
 <p data-line="116" class="code-line">More detailed information, including the technical notebooks, is available <a href="https://github.com/jessezlotoff/blog_data/tree/master/census_participation" data-href="https://github.com/jessezlotoff/blog_data/tree/master/census_participation">here</a>.</p>
 <p data-line="118" class="code-line">This model was built as a final project for the General Assembly Online Data<br> Science course, April-June 2020.</p>
